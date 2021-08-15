@@ -4,7 +4,9 @@ PodcastIndexJS is a client-side javascript library to use the Podcast Index API 
 
 To use the Podcast Index API, you must register for a developer `API KEY` and `API SECRET` from <https://api.podcastindex.org/signup>.
 
-PodcastIndexJS comes with typescript types, which are also available as JSON schemas in src/schemas.
+## Documentation
+
+All available methods/types can be viewed at <https://jasonobeid.github.io/PodcastIndexJS/classes/index.PodcastIndexClient.html>.
 
 ## Installation
 
