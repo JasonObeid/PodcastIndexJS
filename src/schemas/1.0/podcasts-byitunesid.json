@@ -4,9 +4,7 @@
   "properties": {
     "status": {
       "type": "string",
-      "enum": [
-        "true"
-      ]
+      "enum": ["true"]
     },
     "feed": {
       "$ref": "#/definitions/PIApiItunesPodcast"
@@ -28,12 +26,7 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "description",
-    "feed",
-    "query",
-    "status"
-  ],
+  "required": ["description", "feed", "query", "status"],
   "definitions": {
     "PIApiItunesPodcast": {
       "description": "Returned by podcastByItunesId, internally this has a different code path than\nthe other podcastBy* so the result is less feature rich",
@@ -50,10 +43,7 @@
             }
           },
           "additionalProperties": false,
-          "required": [
-            "message",
-            "url"
-          ]
+          "required": ["message", "url"]
         },
         "locked": {
           "type": "number"
@@ -115,10 +105,7 @@
         },
         "generator": {
           "description": "The channel-level generator element if there is one.",
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         },
         "type": {
           "$ref": "#/definitions/PodcastFeedType",
@@ -150,10 +137,7 @@
         },
         "itunesId": {
           "description": "The iTunes id of this feed if there is one, and we know what it is.",
-          "type": [
-            "null",
-            "number"
-          ]
+          "type": ["null", "number"]
         },
         "language": {
           "description": "The channel-level language specification of the feed. Languages accord with the RSS language spec.",
@@ -203,10 +187,7 @@
       ]
     },
     "PodcastFeedType": {
-      "enum": [
-        0,
-        1
-      ],
+      "enum": [0, 1],
       "type": "number"
     }
   },

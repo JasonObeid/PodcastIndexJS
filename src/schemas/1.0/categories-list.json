@@ -4,9 +4,7 @@
   "properties": {
     "status": {
       "type": "string",
-      "enum": [
-        "true"
-      ]
+      "enum": ["true"]
     },
     "feeds": {
       "type": "array",
@@ -22,12 +20,7 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "count",
-    "description",
-    "feeds",
-    "status"
-  ],
+  "required": ["count", "description", "feeds", "status"],
   "definitions": {
     "PIApiCategory": {
       "type": "object",
@@ -40,10 +33,7 @@
         }
       },
       "additionalProperties": false,
-      "required": [
-        "id",
-        "name"
-      ]
+      "required": ["id", "name"]
     }
   },
   "$schema": "http://json-schema.org/draft-07/schema#"

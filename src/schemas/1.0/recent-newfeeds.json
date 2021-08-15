@@ -22,20 +22,10 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "count",
-    "description",
-    "feeds",
-    "max",
-    "status"
-  ],
+  "required": ["count", "description", "feeds", "max", "status"],
   "definitions": {
     "ApiResponse.NewFeedStatus": {
-      "enum": [
-        "confirmed",
-        "pending",
-        "true"
-      ],
+      "enum": ["confirmed", "pending", "true"],
       "type": "string"
     },
     "PIApiRecentNewFeed": {
@@ -65,15 +55,7 @@
         }
       },
       "additionalProperties": false,
-      "required": [
-        "contentHash",
-        "id",
-        "image",
-        "language",
-        "status",
-        "timeAdded",
-        "url"
-      ]
+      "required": ["contentHash", "id", "image", "language", "status", "timeAdded", "url"]
     }
   },
   "$schema": "http://json-schema.org/draft-07/schema#"

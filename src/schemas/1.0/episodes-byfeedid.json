@@ -4,9 +4,7 @@
   "properties": {
     "status": {
       "type": "string",
-      "enum": [
-        "true"
-      ]
+      "enum": ["true"]
     },
     "items": {
       "type": "array",
@@ -25,13 +23,7 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "count",
-    "description",
-    "items",
-    "query",
-    "status"
-  ],
+  "required": ["count", "description", "items", "query", "status"],
   "definitions": {
     "PIApiEpisodeInfo": {
       "description": "Returned by episodesByFeed*, episodesByItunesId",
@@ -41,10 +33,7 @@
           "type": "number"
         },
         "transcriptUrl": {
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         },
         "id": {
           "type": "number"
@@ -83,16 +72,10 @@
           "type": "number"
         },
         "episode": {
-          "type": [
-            "null",
-            "number"
-          ]
+          "type": ["null", "number"]
         },
         "episodeType": {
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         },
         "season": {
           "type": "number"
@@ -102,10 +85,7 @@
           "type": "string"
         },
         "feedItunesId": {
-          "type": [
-            "null",
-            "number"
-          ]
+          "type": ["null", "number"]
         },
         "feedImage": {
           "description": "URL to feed image",
@@ -118,10 +98,7 @@
           "type": "string"
         },
         "chaptersUrl": {
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         },
         "soundbite": {
           "type": "object",
@@ -137,11 +114,7 @@
             }
           },
           "additionalProperties": false,
-          "required": [
-            "duration",
-            "startTime",
-            "title"
-          ]
+          "required": ["duration", "startTime", "title"]
         },
         "soundbites": {
           "type": "array",
@@ -159,11 +132,7 @@
               }
             },
             "additionalProperties": false,
-            "required": [
-              "duration",
-              "startTime",
-              "title"
-            ]
+            "required": ["duration", "startTime", "title"]
           }
         }
       },

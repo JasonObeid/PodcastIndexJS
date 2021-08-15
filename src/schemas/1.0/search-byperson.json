@@ -4,9 +4,7 @@
   "properties": {
     "status": {
       "type": "string",
-      "enum": [
-        "true"
-      ]
+      "enum": ["true"]
     },
     "items": {
       "type": "array",
@@ -25,23 +23,14 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "count",
-    "description",
-    "items",
-    "query",
-    "status"
-  ],
+  "required": ["count", "description", "items", "query", "status"],
   "definitions": {
     "PIApiPersonEpisode": {
       "description": "Returned by searchPerson",
       "type": "object",
       "properties": {
         "duration": {
-          "type": [
-            "null",
-            "number"
-          ]
+          "type": ["null", "number"]
         },
         "feedUrl": {
           "type": "string"
@@ -66,10 +55,7 @@
           "type": "number"
         },
         "chaptersUrl": {
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         },
         "id": {
           "type": "number"
@@ -96,25 +82,16 @@
           "type": "number"
         },
         "episode": {
-          "type": [
-            "null",
-            "number"
-          ]
+          "type": ["null", "number"]
         },
         "episodeType": {
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         },
         "season": {
           "type": "number"
         },
         "feedItunesId": {
-          "type": [
-            "null",
-            "number"
-          ]
+          "type": ["null", "number"]
         },
         "feedImage": {
           "description": "URL to feed image",
@@ -140,11 +117,7 @@
             }
           },
           "additionalProperties": false,
-          "required": [
-            "duration",
-            "startTime",
-            "title"
-          ]
+          "required": ["duration", "startTime", "title"]
         },
         "soundbites": {
           "type": "array",
@@ -162,18 +135,11 @@
               }
             },
             "additionalProperties": false,
-            "required": [
-              "duration",
-              "startTime",
-              "title"
-            ]
+            "required": ["duration", "startTime", "title"]
           }
         },
         "transcriptUrl": {
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         }
       },
       "additionalProperties": false,

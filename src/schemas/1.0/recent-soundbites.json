@@ -4,9 +4,7 @@
   "properties": {
     "status": {
       "type": "string",
-      "enum": [
-        "true"
-      ]
+      "enum": ["true"]
     },
     "items": {
       "type": "array",
@@ -22,12 +20,7 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "count",
-    "description",
-    "items",
-    "status"
-  ],
+  "required": ["count", "description", "items", "status"],
   "definitions": {
     "PiApiSoundbite": {
       "description": "from recentSoundbites",

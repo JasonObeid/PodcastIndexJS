@@ -4,9 +4,7 @@
   "properties": {
     "status": {
       "type": "string",
-      "enum": [
-        "true"
-      ]
+      "enum": ["true"]
     },
     "feeds": {
       "type": "array",
@@ -25,13 +23,7 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "count",
-    "description",
-    "feeds",
-    "query",
-    "status"
-  ],
+  "required": ["count", "description", "feeds", "query", "status"],
   "definitions": {
     "PIApiFeed": {
       "description": "Returned by search",
@@ -97,10 +89,7 @@
         },
         "generator": {
           "description": "The channel-level generator element if there is one.",
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         },
         "type": {
           "$ref": "#/definitions/PodcastFeedType",
@@ -132,10 +121,7 @@
         },
         "itunesId": {
           "description": "The iTunes id of this feed if there is one, and we know what it is.",
-          "type": [
-            "null",
-            "number"
-          ]
+          "type": ["null", "number"]
         },
         "language": {
           "description": "The channel-level language specification of the feed. Languages accord with the RSS language spec.",
@@ -185,10 +171,7 @@
       ]
     },
     "PodcastFeedType": {
-      "enum": [
-        0,
-        1
-      ],
+      "enum": [0, 1],
       "type": "number"
     }
   },

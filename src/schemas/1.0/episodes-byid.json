@@ -4,9 +4,7 @@
   "properties": {
     "status": {
       "type": "string",
-      "enum": [
-        "true"
-      ]
+      "enum": ["true"]
     },
     "id": {
       "type": "string"
@@ -19,12 +17,7 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "description",
-    "episode",
-    "id",
-    "status"
-  ],
+  "required": ["description", "episode", "id", "status"],
   "definitions": {
     "PIApiEpisodeDetail": {
       "description": "Returned by episodeById",
@@ -34,10 +27,7 @@
           "type": "string"
         },
         "transcriptUrl": {
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         },
         "duration": {
           "type": "number"
@@ -79,16 +69,10 @@
           "type": "number"
         },
         "episode": {
-          "type": [
-            "null",
-            "number"
-          ]
+          "type": ["null", "number"]
         },
         "episodeType": {
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         },
         "season": {
           "type": "number"
@@ -98,10 +82,7 @@
           "type": "string"
         },
         "feedItunesId": {
-          "type": [
-            "null",
-            "number"
-          ]
+          "type": ["null", "number"]
         },
         "feedImage": {
           "description": "URL to feed image",
@@ -114,10 +95,7 @@
           "type": "string"
         },
         "chaptersUrl": {
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         },
         "soundbite": {
           "type": "object",
@@ -133,11 +111,7 @@
             }
           },
           "additionalProperties": false,
-          "required": [
-            "duration",
-            "startTime",
-            "title"
-          ]
+          "required": ["duration", "startTime", "title"]
         },
         "soundbites": {
           "type": "array",
@@ -155,11 +129,7 @@
               }
             },
             "additionalProperties": false,
-            "required": [
-              "duration",
-              "startTime",
-              "title"
-            ]
+            "required": ["duration", "startTime", "title"]
           }
         }
       },

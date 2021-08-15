@@ -1,14 +1,8 @@
-.vscode
 docs
-scripts/
-.dockerignore
-.editorconfig
-.env
 .eslint*
 .prettierrc
-Dockerfile
-example.ts
 jest.config.js
+jestSetup.js
 tsconfig*
 typedoc.json
 yarn*

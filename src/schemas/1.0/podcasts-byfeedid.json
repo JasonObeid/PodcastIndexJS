@@ -5,9 +5,7 @@
   "properties": {
     "status": {
       "type": "string",
-      "enum": [
-        "true"
-      ]
+      "enum": ["true"]
     },
     "feed": {
       "$ref": "#/definitions/PIApiPodcast"
@@ -29,12 +27,7 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "description",
-    "feed",
-    "query",
-    "status"
-  ],
+  "required": ["description", "feed", "query", "status"],
   "definitions": {
     "PIApiPodcast": {
       "description": "Returned by podcastBy*",
@@ -66,11 +59,7 @@
                 }
               },
               "additionalProperties": false,
-              "required": [
-                "method",
-                "suggested",
-                "type"
-              ]
+              "required": ["method", "suggested", "type"]
             },
             "destinations": {
               "type": "array",
@@ -91,20 +80,12 @@
                   }
                 },
                 "additionalProperties": false,
-                "required": [
-                  "address",
-                  "name",
-                  "split",
-                  "type"
-                ]
+                "required": ["address", "name", "split", "type"]
               }
             }
           },
           "additionalProperties": false,
-          "required": [
-            "destinations",
-            "model"
-          ]
+          "required": ["destinations", "model"]
         },
         "funding": {
           "type": "object",
@@ -117,10 +98,7 @@
             }
           },
           "additionalProperties": false,
-          "required": [
-            "message",
-            "url"
-          ]
+          "required": ["message", "url"]
         },
         "locked": {
           "type": "number"
@@ -182,10 +160,7 @@
         },
         "generator": {
           "description": "The channel-level generator element if there is one.",
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         },
         "type": {
           "$ref": "#/definitions/PodcastFeedType",
@@ -217,10 +192,7 @@
         },
         "itunesId": {
           "description": "The iTunes id of this feed if there is one, and we know what it is.",
-          "type": [
-            "null",
-            "number"
-          ]
+          "type": ["null", "number"]
         },
         "language": {
           "description": "The channel-level language specification of the feed. Languages accord with the RSS language spec.",
@@ -273,10 +245,7 @@
       ]
     },
     "PodcastFeedType": {
-      "enum": [
-        0,
-        1
-      ],
+      "enum": [0, 1],
       "type": "number"
     }
   },

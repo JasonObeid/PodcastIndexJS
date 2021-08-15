@@ -3,16 +3,11 @@
   "type": "object",
   "properties": {
     "since": {
-      "type": [
-        "null",
-        "number"
-      ]
+      "type": ["null", "number"]
     },
     "status": {
       "type": "string",
-      "enum": [
-        "true"
-      ]
+      "enum": ["true"]
     },
     "feeds": {
       "type": "array",
@@ -31,14 +26,7 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "count",
-    "description",
-    "feeds",
-    "max",
-    "since",
-    "status"
-  ],
+  "required": ["count", "description", "feeds", "max", "since", "status"],
   "definitions": {
     "PIApiNewFeed": {
       "description": "from recentFeeds",
@@ -71,10 +59,7 @@
         },
         "itunesId": {
           "description": "The iTunes id of this feed if there is one, and we know what it is.",
-          "type": [
-            "null",
-            "number"
-          ]
+          "type": ["null", "number"]
         },
         "language": {
           "description": "The channel-level language specification of the feed. Languages accord with the RSS language spec.",

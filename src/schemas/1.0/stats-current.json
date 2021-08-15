@@ -4,9 +4,7 @@
   "properties": {
     "status": {
       "type": "string",
-      "enum": [
-        "true"
-      ]
+      "enum": ["true"]
     },
     "stats": {
       "$ref": "#/definitions/PIStats"
@@ -16,11 +14,7 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "description",
-    "stats",
-    "status"
-  ],
+  "required": ["description", "stats", "status"],
   "definitions": {
     "PIStats": {
       "description": "from stats",

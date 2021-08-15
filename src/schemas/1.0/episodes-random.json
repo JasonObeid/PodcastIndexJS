@@ -4,9 +4,7 @@
   "properties": {
     "status": {
       "type": "string",
-      "enum": [
-        "true"
-      ]
+      "enum": ["true"]
     },
     "max": {
       "type": "string"
@@ -25,13 +23,7 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "count",
-    "description",
-    "episodes",
-    "max",
-    "status"
-  ],
+  "required": ["count", "description", "episodes", "max", "status"],
   "definitions": {
     "PIApiRandomEpisode": {
       "description": "Returned by episodesRandom",
@@ -91,16 +83,10 @@
           "type": "number"
         },
         "episode": {
-          "type": [
-            "null",
-            "number"
-          ]
+          "type": ["null", "number"]
         },
         "episodeType": {
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         },
         "season": {
           "type": "number"
@@ -110,10 +96,7 @@
           "type": "string"
         },
         "feedItunesId": {
-          "type": [
-            "null",
-            "number"
-          ]
+          "type": ["null", "number"]
         },
         "feedImage": {
           "description": "URL to feed image",
@@ -126,10 +109,7 @@
           "type": "string"
         },
         "chaptersUrl": {
-          "type": [
-            "null",
-            "string"
-          ]
+          "type": ["null", "string"]
         },
         "soundbite": {
           "type": "object",
@@ -145,11 +125,7 @@
             }
           },
           "additionalProperties": false,
-          "required": [
-            "duration",
-            "startTime",
-            "title"
-          ]
+          "required": ["duration", "startTime", "title"]
         },
         "soundbites": {
           "type": "array",
@@ -167,11 +143,7 @@
               }
             },
             "additionalProperties": false,
-            "required": [
-              "duration",
-              "startTime",
-              "title"
-            ]
+            "required": ["duration", "startTime", "title"]
           }
         }
       },
