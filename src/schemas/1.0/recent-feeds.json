@@ -1,0 +1,114 @@
+{
+  "title": "`/api/1.0/recent/feeds` - This call returns the most recent [max] feeds, in reverse chronological order.",
+  "type": "object",
+  "properties": {
+    "since": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "true"
+      ]
+    },
+    "feeds": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/PIApiNewFeed"
+      }
+    },
+    "count": {
+      "type": "number"
+    },
+    "max": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "count",
+    "description",
+    "feeds",
+    "max",
+    "since",
+    "status"
+  ],
+  "definitions": {
+    "PIApiNewFeed": {
+      "description": "from recentFeeds",
+      "type": "object",
+      "properties": {
+        "newestItemPublishTime": {
+          "description": "[Unix Epoch] Timestamp",
+          "type": "number"
+        },
+        "oldestItemPublishTime": {
+          "type": "number"
+        },
+        "description": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        },
+        "id": {
+          "description": "The internal podcastindex.org feed id.",
+          "type": "number"
+        },
+        "title": {
+          "description": "The feed title.",
+          "type": "string"
+        },
+        "url": {
+          "description": "The current feed url.",
+          "type": "string"
+        },
+        "itunesId": {
+          "description": "The iTunes id of this feed if there is one, and we know what it is.",
+          "type": [
+            "null",
+            "number"
+          ]
+        },
+        "language": {
+          "description": "The channel-level language specification of the feed. Languages accord with the RSS language spec.",
+          "type": "string"
+        },
+        "categories": {
+          "description": "category id: name, NOTE: this is not always present on the raw responses and will be populated with an empty object when missing form the api response",
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "categories",
+        "description",
+        "id",
+        "image",
+        "itunesId",
+        "language",
+        "newestItemPublishTime",
+        "oldestItemPublishTime",
+        "title",
+        "url"
+      ]
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,196 @@
+{
+  "title": "`/api/1.0/episodes/byid` - Get all the metadata for a single episode by passing its id.",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "true"
+      ]
+    },
+    "id": {
+      "type": "string"
+    },
+    "episode": {
+      "$ref": "#/definitions/PIApiEpisodeDetail"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "description",
+    "episode",
+    "id",
+    "status"
+  ],
+  "definitions": {
+    "PIApiEpisodeDetail": {
+      "description": "Returned by episodeById",
+      "type": "object",
+      "properties": {
+        "feedTitle": {
+          "type": "string"
+        },
+        "transcriptUrl": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "duration": {
+          "type": "number"
+        },
+        "id": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        },
+        "link": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "guid": {
+          "type": "string"
+        },
+        "datePublished": {
+          "type": "number"
+        },
+        "datePublishedPretty": {
+          "type": "string"
+        },
+        "dateCrawled": {
+          "type": "number"
+        },
+        "enclosureUrl": {
+          "type": "string"
+        },
+        "enclosureType": {
+          "type": "string"
+        },
+        "enclosureLength": {
+          "type": "number"
+        },
+        "explicit": {
+          "type": "number"
+        },
+        "episode": {
+          "type": [
+            "null",
+            "number"
+          ]
+        },
+        "episodeType": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "season": {
+          "type": "number"
+        },
+        "image": {
+          "description": "URL to episode image",
+          "type": "string"
+        },
+        "feedItunesId": {
+          "type": [
+            "null",
+            "number"
+          ]
+        },
+        "feedImage": {
+          "description": "URL to feed image",
+          "type": "string"
+        },
+        "feedId": {
+          "type": "number"
+        },
+        "feedLanguage": {
+          "type": "string"
+        },
+        "chaptersUrl": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "soundbite": {
+          "type": "object",
+          "properties": {
+            "startTime": {
+              "type": "number"
+            },
+            "duration": {
+              "type": "number"
+            },
+            "title": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "duration",
+            "startTime",
+            "title"
+          ]
+        },
+        "soundbites": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "startTime": {
+                "type": "number"
+              },
+              "duration": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "duration",
+              "startTime",
+              "title"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "chaptersUrl",
+        "dateCrawled",
+        "datePublished",
+        "datePublishedPretty",
+        "description",
+        "duration",
+        "enclosureLength",
+        "enclosureType",
+        "enclosureUrl",
+        "episode",
+        "episodeType",
+        "explicit",
+        "feedId",
+        "feedImage",
+        "feedItunesId",
+        "feedLanguage",
+        "feedTitle",
+        "guid",
+        "id",
+        "image",
+        "link",
+        "season",
+        "title",
+        "transcriptUrl"
+      ]
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

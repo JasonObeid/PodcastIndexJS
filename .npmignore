@@ -1,0 +1,14 @@
+.vscode
+docs
+scripts/
+.dockerignore
+.editorconfig
+.env
+.eslint*
+.prettierrc
+Dockerfile
+example.ts
+jest.config.js
+tsconfig*
+typedoc.json
+yarn*
