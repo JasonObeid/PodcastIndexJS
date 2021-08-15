@@ -1,6 +1,6 @@
 {
   "name": "podcastindexjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "client-side JS library for interacting with the Podcast Index API",
   "author": "Jason Obeid",
   "homepage": "https://jasonobeid.github.io/PodcastIndexJS",
