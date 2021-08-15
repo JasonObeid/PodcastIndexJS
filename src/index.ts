@@ -1,6 +1,7 @@
 import { pick } from "ramda";
 
 import { ApiResponse } from "./types";
+import * as Types from "./types";
 import { normalizeKey, toEpochTimestamp } from "./utils";
 
 const clientUserAgent = "podcastindexjs";
@@ -406,4 +407,4 @@ class PodcastIndexClient {
   }
 }
 
-export { PodcastIndexClient };
+export { PodcastIndexClient, Types };

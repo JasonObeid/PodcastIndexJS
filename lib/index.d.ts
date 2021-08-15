@@ -1,4 +1,5 @@
 import { ApiResponse } from "./types";
+import * as Types from "./types";
 declare class PodcastIndexClient {
     private apiUrl;
     private userAgent;
@@ -146,4 +147,4 @@ declare class PodcastIndexClient {
     }): Promise<ApiResponse.EpisodeById>;
     stats(): Promise<ApiResponse.Stats>;
 }
-export { PodcastIndexClient };
+export { PodcastIndexClient, Types };

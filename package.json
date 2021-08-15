@@ -20,7 +20,6 @@
     "test": "jest",
     "predeploy": "yarn build && yarn test && yarn lint && yarn fix && yarn document && yarn changelog",
     "deploy:docs": "gh-pages -d docs",
-    "prettier:base": "prettier --parser typescript",
     "lint": "eslint --fix ./src",
     "fix": "prettier --write ./src"
   },
