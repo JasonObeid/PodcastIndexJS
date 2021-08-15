@@ -1,6 +1,14 @@
 {
   "name": "podcastindexjs",
   "version": "1.0.0",
+  "description": "client-side JS library for interacting with the Podcast Index API",
+  "author": "Jason Obeid",
+  "homepage": "https://jasonobeid.github.io/PodcastIndexJS",
+  "keywords": [
+    "PodcastIndex",
+    "PodcastIndex.org",
+    "Podcasts"
+  ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
@@ -11,7 +19,7 @@
     "schema": "typescript-json-schema ./tsconfig.json *",
     "test": "jest",
     "predeploy": "yarn build && yarn test && yarn lint && yarn fix && yarn document && yarn changelog",
-    "deploy": "gh-pages -d docs",
+    "deploy:docs": "gh-pages -d docs",
     "prettier:base": "prettier --parser typescript",
     "lint": "eslint --ext --fix .js,.ts src/",
     "fix": "prettier --write ./src"

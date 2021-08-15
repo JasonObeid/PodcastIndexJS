@@ -3,8 +3,7 @@ import { pick } from "ramda";
 import { ApiResponse } from "./types";
 import { normalizeKey, toEpochTimestamp } from "./utils";
 
-const version = "5.0.0";
-const clientUserAgent = `podcastdx client/${version}`;
+const clientUserAgent = "podcastindexjs";
 const apiVersion = "1.0";
 
 function encodeObjectToQueryString(qs?: ApiResponse.AnyQueryOptions) {
