@@ -20,7 +20,7 @@ yarn add podcastindexjs
 import { PodcastIndexClient } from "podcastindexjs";
 
 // assumes you have your key and secret set as environment variables
-const client = new PodcastIndexClient(process.env.API_KEY, secret: process.env.API_SECRET);
+const client = new PodcastIndexClient(process.env.API_KEY, process.env.API_SECRET);
 
 client.search("javascript").then(console.log);
 
